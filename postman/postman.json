@@ -1,0 +1,550 @@
+{
+	"info": {
+		"_postman_id": "d1f58d4c-e143-4807-9be5-22df82529106",
+		"name": "Air companies Management System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21390960"
+	},
+	"item": [
+		{
+			"name": "airplane",
+			"item": [
+				{
+					"name": "Get all airplane",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{api_url}}/api/airplane",
+							"protocol": "http",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"airplane"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get airplane",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{api_url}}/api/airplane/{{plane_id}}",
+							"protocol": "http",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"airplane",
+								"{{plane_id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete airplane",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://{{api_url}}/api/airplane/{{plane_id}}",
+							"protocol": "http",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"airplane",
+								"{{plane_id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create airplane",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"name\":\"Boing\" ,\n   \"factorySerialNumber\": \"232513\",\n   \"airCompany\": 1,\n   \"flightDistance\":\"3232\" ,\n   \"fuelCapacity\":\"2332\" ,\n   \"type\":\"standart\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{api_url}}/api/airplane",
+							"protocol": "http",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"airplane"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update airplane",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"name\":\"Boing\" ,\n   \"factorySerialNumber\": \"\",\n   \"airCompany\": \"\",\n   \"flightDistance\":\"\" ,\n   \"fuelCapacity\":\"\" ,\n   \"type\":\"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{api_url}}/api/airplane/{{plane_id}}",
+							"protocol": "http",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"airplane",
+								"{{plane_id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update airplane company",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"airCompany\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{api_url}}/api/airplane/move/{{plane_id}}",
+							"protocol": "http",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"airplane",
+								"move",
+								"{{plane_id}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "aircompany",
+			"item": [
+				{
+					"name": "Get all aircompany",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{api_url}}/api/aircompany",
+							"protocol": "http",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"aircompany"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get aircompany",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{api_url}}/api/aircompany/{{aircompany_id}}",
+							"protocol": "http",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"aircompany",
+								"{{aircompany_id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete aircompany",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://{{api_url}}/api/aircompany/{{aircompany_id}}",
+							"protocol": "http",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"aircompany",
+								"{{aircompany_id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create aircompany",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"name\":\"thy1234\" ,\n   \"companyType\": \"standart\",\n   \"foundedAt\":\"2022-11-17T18:49:55.916Z\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{api_url}}/api/aircompany",
+							"protocol": "http",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"aircompany"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update aircompany",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"name\":\"thy\" ,\n   \"companyType\": \"standart\",\n   \"foundedAt\":\"2022-11-18T18:49:55.916Z\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{api_url}}/api/aircompany/{{aircompany_id}}",
+							"protocol": "http",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"aircompany",
+								"{{aircompany_id}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Flight",
+			"item": [
+				{
+					"name": "Get all flight",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{api_url}}/api/flight",
+							"protocol": "http",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"flight"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all active flight in 24 hours",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{api_url}}/api/flight/active",
+							"protocol": "http",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"flight",
+								"active"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all completed flight",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{api_url}}/api/flight/completed",
+							"protocol": "http",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"flight",
+								"completed"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get flight",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{api_url}}/api/flight/{{flight_id}}",
+							"protocol": "http",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"flight",
+								"{{flight_id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete flight",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://{{api_url}}/api/flight/{{flight_id}}",
+							"protocol": "http",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"flight",
+								"{{flight_id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create flight",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"name\":\"Boing\" ,\n   \"factorySerialNumber\": \"\",\n   \"airCompany\": \"\",\n   \"flightDistance\":\"\" ,\n   \"fuelCapacity\":\"\" ,\n   \"type\":\"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{api_url}}/api/flight",
+							"protocol": "http",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"flight"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all flight by status and aircompany",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"status\":\"Boing\" ,\n   \"airCompany\": \"\"\n   \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{api_url}}/api/flight/status",
+							"protocol": "http",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"flight",
+								"status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update flight status",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"status\":\"COMPLETED\" ,\n   \"flightId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{api_url}}/api/flight/change_status",
+							"protocol": "http",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"flight",
+								"change_status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update flight",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"airPlane\": 1,\n   \"airCompany\": 1,\n   \"departureCountry\":\"\" ,\n   \"destinationCountry\":\"\" ,\n   \"distance\":\"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{api_url}}/api/flight/1",
+							"protocol": "http",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"api",
+								"flight",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Health check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{api_url}}/api/",
+					"protocol": "http",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"api",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "api_url",
+			"value": "localhost"
+		},
+		{
+			"key": "aircompany_id",
+			"value": "3"
+		}
+	]
+}
