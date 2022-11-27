@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "d1f58d4c-e143-4807-9be5-22df82529106",
+		"_postman_id": "7050ebac-da6d-4edd-9580-1b9b2ca1c25d",
 		"name": "Air companies Management System",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "21390960"
@@ -387,7 +387,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n   \"name\":\"Boing\" ,\n   \"factorySerialNumber\": \"\",\n   \"airCompany\": \"\",\n   \"flightDistance\":\"\" ,\n   \"fuelCapacity\":\"\" ,\n   \"type\":\"\"\n}",
+							"raw": "{\n   \"airPlane\": 1,\n   \"airCompany\": 1,\n   \"departureCountry\":\"\" ,\n   \"destinationCountry\":\"\" ,\n   \"distance\":\"\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
