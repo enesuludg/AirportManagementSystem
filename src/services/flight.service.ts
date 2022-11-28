@@ -102,7 +102,7 @@ class FlightService {
     const newList: Flight[] = [];
     allFlight.forEach(flight => {
       const diffTime = new Date(flight.endAt).valueOf() - new Date(flight.startedAt).valueOf();
-      if (flight.estimatedFlightTime < diffTime) {
+      if (flight.estimatedFlightTime < (diffTime/1000/60/60)) {
         newList.push(flight);
       }
     });
